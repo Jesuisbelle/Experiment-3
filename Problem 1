@@ -35,8 +35,8 @@ int main()
 		sum += arr[i];
 	}
 
-    cout << "Average of the array of elements:  " << sum/10;
-    cout << "\nSum of the array of elements: " << sum;
+	cout << "Average of the array of elements:  " << sum/10;
+	cout << "\nSum of the array of elements: " << sum;
 	cout << "\nLargest element in the array: " << max;
 	cout << "\nSmallest element in the array: " << min;
 	_getch();
