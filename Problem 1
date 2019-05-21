@@ -1,1 +1,45 @@
 
+//Create a C++ program to show the smallest and largest integer, the total, and the average of an array
+//that take 10 elements only.
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main() 
+{
+	int arr[10], n, i, max, min, sum = 0;
+
+	cout << "Enter the size of the array: ";
+		cin >> n;
+	cout << "Enter the elements of the array: ";
+	
+	for (i = 0; i < n; i++)
+		cin >> arr[i];
+		max = arr[0];
+
+	for (i = 0; i < n; i++)
+	{
+		if (max < arr[i])
+			max = arr[i];
+	}
+		min = arr[0];
+	
+	for (i = 0; i < n; i++)
+	{
+		if (min > arr[i])
+			min = arr[i];
+	}
+	
+	for (i = 0; i < n; i++)
+	{
+		sum += arr[i];
+	}
+
+    cout << "Average of the array of elements:  " << sum/10;
+    cout << "\nSum of the array of elements: " << sum;
+	cout << "\nLargest element in the array: " << max;
+	cout << "\nSmallest element in the array: " << min;
+	_getch();
+	return 0;
+}
